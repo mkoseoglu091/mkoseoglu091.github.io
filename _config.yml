@@ -1,1 +1,17 @@
-theme: jekyll-theme-cayman
+title: Mehmet Koseoglu
+description: Game and Software Developer
+
+
+# Build settings
+markdown: kramdown
+exclude: [vendor/ruby]
+
+# Personalization
+github_username: mkoseoglu091
+email: mkoseoglu091@gmail.com
+
+# absolute or relative
+profile_picture: assets/images/pp.jpg
+
+# Google Analytics ID
+# google_analytics: 
