@@ -109,7 +109,7 @@ img {
 
 .head-menu-wrap {
   position: absolute;
-  bottom: 20px;
+  bottom: 40px;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
