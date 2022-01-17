@@ -1,3 +1,8 @@
+---
+layout: page
+title: PICO-8 Games
+---
+
 
 ## 1st Game: Half Pipe
 My first attempt at a PICO-8 game. The game gets faster as you keep playing. You just need to press the correct button combo. You can press and hold the direction, and then push the X or O button. By default, the X button is "X" on the keyboard, and the O button is "Z" on the keyboard. (Music: CKY - 96 Quite Bitter Beings)
@@ -935,7 +940,63 @@ My first attempt at a PICO-8 game. The game gets faster as you keep playing. You
 
 </script>
 
+<STYLE TYPE="text/css">
+<!--
+.p8_menu_button{
+	opacity:0.3;
+	padding:4px;
+	display:table;
+	width:24px;
+	height:24px;
+	float:right;
+}
 
+@media screen and (min-width:512px) {
+	.p8_menu_button{
+		width:24px; margin-left:12px; margin-bottom:8px;
+	}
+}
+.p8_menu_button:hover{
+	opacity:1.0;
+	cursor:pointer;
+}
+
+canvas{
+    image-rendering: optimizeSpeed;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: optimize-contrast;
+    image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neighbor;
+	border: 0px;
+	cursor: none;
+}
+
+
+.p8_start_button{
+	cursor:pointer;
+	background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAIAAABMXPacAAAFU0lEQVR4Ae1du2ojSxDtGRRPsDDxZobB/gjnStcfIASbCxw4E842WJh8QfgDvKlyf8ReDJs5NjjwF9ygdVt9e6pqStOteWjOwZhST3V19zn1SI0xpiiroqyMgT2EDRaGtQ1YGNY+ygBG0IXAPmzMAMwA2L3a2VEEYAjkoAACQAAAAkAAAAJAAAACQACgXyw67NlcXQtf67//dHZzi/oTNcdxPjF7SZ9RVIDMu+ym3HvqFs4nZm/ktaMqwOLl9SD7bXXd/Nl0C0C6BYvcia1xlD4xewUfzIBLnwGDQ5NxQV12iC/vjcn6xAIoHxnDiHBiKiKGugNa0PRbkDK1k+S+PuNijtPsHVELSovN1fFh9V+WCOEThnCyGbC5uu5MdEyG9jlXxlUBgTyRRMRUSW8VNroWNBX4uRKTKDmoHBZZUVaRo1Ko33g3zodsETE+HfYmaVkdBQBSAS0IAkAAAAJAAAACQABgACxm+/LP91djTFFWwwaclwCWI4vtw70x5vHHz1TBmwE1YsxFAEu95SigyS3GgAxoF2UZsoQ1OGb2D6R8vB0p+/VsjNl+v0t1ChHwy1crg0Dy5Q/hA/sfbz77FqvV2rJG4uX3n9YVn/3Vah2ufryZj7ftw73f+mYnQGfcfrvxGX/5/ef2203yUy68BX2+v5JNxib+arV+etodGnfDjcz3pgauhlw04sQvX7lGhAowROv4j32fbmuTqpARlIAAxhVBM/eDFsRVRjMCBDigKCtyzPpdYvv9rtk0uHbfXA+20x2P6T/GmAUqQJ7DrVMBQ7jjKLaVQSZscxI0RwI32MmDBJJnIYDVwGfn8dfz9uHeNgdZAyXIgFYSmeG5tCDLAjkPyMVIMfxDZcxrBviMPP74qeRIy3ungHNpQaNFDgogAAQAIAAE6ILNemn/rO3+Cz6kv+Dj7CCmf5bvw+3lfLiYvWERub/e7U+6dL3b631scHmLdXD0+c7OFnwm34L893BK+A9uJp3sozm3WXD6OJMXwGVWvduflN1CNSjjNPkN7iDEGY82sS3o1HRzakX6kNUQbPR/cpXqZ88gqmRFWY2/Ti8YsS0IgAAQAIAA08UiZvNmvbRGvdtztnNr2mQofyN3Vmsc4T7CPSdZAf7VA9sxRdokawG/zYP8OGRCuPj+f+6egc8kBfCZ8nkJ1t1P3ybp477q70NG4O45+RngZzRZ1IGD8HK7PYYaIX5QAZEyj2UGtFaGe6rcuK2b/cr5kOUitLKpICvKakLXvTzEtiAAAkAAAAJMG0VZuVEMu28bLAxrG7AwrI0uhC4E9sECZgBmABgZyM6cDp/vr759FAdIAUdpwHNGrv6vOoCkMgQ8LzTsb9ZLY0y92wfh7Lr9FGOPmbKE7yJ5zjW5L3Dkf4qxx4zW+9e7feu7OJ5zbgacmiCR9tSheQvJcx7D/kwq4FQe9OwfKkA5A5zI587cVFWVqiJb/TfrpSYOyXPG6QOkxblmAKAHyXPGse/XgaupoNP56zH2JKZrknd1nAH1bs/RNIch3Hr/gB/uXSTPi1b25al7jqE3OWgeEjsDuCKYQwUoq6T1OSTPuXICb9ZLp/O5MzdVVaWqSOVemR+O56woK00XAuJB8pxx+gA9sG+MWXDV4cvgaipoc/56jD2JAdv6FvsQ4V3dZ4AwYeYwhFvvHzyEfBfHcy5UBzeIzjEwZ9uFcuUEnnMFnHUG5EJ1+KnaZ+amqqpUFdnqb43gp7ILZRz7ZB0AyetAOwOAM3WhjKsOoJ8ZcGDf/YDdtw0WhrWPhQBGBrHRhdCFwD5YwAzADAAjw9YBAAAAAAAAAAAzwr9eYIUKV05OgAAAABB0RVh0TG9kZVBORwAyMDExMDIyMeNZtsEAAAAASUVORK5CYII=");
+	-repeat center;
+	-webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover;
+}
+
+.button_gfx{
+	stroke-width:2;
+	stroke: #ffffff;
+	stroke-opacity:0.4;
+	fill-opacity:0.2;
+	fill:black;
+}
+
+.button_gfx_icon{
+	stroke-width:3;
+	stroke: #909090;
+	stroke-opacity:0.7;
+	fill:none;
+}
+
+-->
+</STYLE>
 
 
 <body style="padding:0px; margin:0px; background-color:#222; color:#ccc">
