@@ -584,7 +584,7 @@ img {
   float: left;
 }
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 610px) {
   img {
       float: none;
   }
