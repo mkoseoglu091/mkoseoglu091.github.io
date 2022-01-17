@@ -5,7 +5,7 @@ My first attempt at a PICO-8 game. The game gets faster as you keep playing. You
 
 [Half Pipe](halfpipe.html)
 
-<html><head>
+<html>
 <title>PICO-8 Cartridge: Half Pipe</title>
 <meta name="viewport" content="width=device-width, user-scalable=no">
 <script type="text/javascript">
@@ -994,7 +994,6 @@ canvas{
 -->
 </STYLE>
 
-</head>
 
 <body style="padding:0px; margin:0px; background-color:#222; color:#ccc">
 <div id="body_0"> <!-- hide this when playing in mobile (p8_touch_detected) so that elements don't affect layout -->
