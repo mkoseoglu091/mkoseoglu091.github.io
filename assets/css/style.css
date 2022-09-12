@@ -561,6 +561,8 @@ main {
 
 .testimonials { margin-bottom: 30px; }
 
+.testimonials { display: none;}
+
 .testimonials-title { margin-bottom: 20px; }
 
 .testimonials-list {
@@ -726,6 +728,8 @@ main {
  */
 
 .clients { margin-bottom: 15px; }
+
+.clients { display: none;}
 
 .clients-list {
   display: flex;
@@ -1235,6 +1239,9 @@ textarea.form-input::-webkit-resizer { display: none; }
  */
 
 @media (min-width: 450px) {
+  .testimonials { display: none;}
+
+  .clients { display: none;}
 
   /**
    * client
@@ -1262,6 +1269,9 @@ textarea.form-input::-webkit-resizer { display: none; }
  */
 
 @media (min-width: 580px) {
+  .testimonials { display: none;}
+
+  .clients { display: none;}
 
   /**
    * CUSTOM PROPERTY
@@ -1553,6 +1563,9 @@ textarea.form-input::-webkit-resizer { display: none; }
  */
 
 @media (min-width: 768px) {
+  .testimonials { display: none;}
+
+  .clients { display: none;}
 
   /**
    * REUSED STYLE
@@ -1653,6 +1666,10 @@ textarea.form-input::-webkit-resizer { display: none; }
  */
 
 @media (min-width: 1024px) {
+
+  .testimonials { display: none;}
+
+  .clients { display: none;}
 
   /**
    * CUSTOM PROPERTY
@@ -1768,6 +1785,9 @@ textarea.form-input::-webkit-resizer { display: none; }
  */
 
 @media (min-width: 1250px) {
+  .testimonials { display: none;}
+
+  .clients { display: none;}
 
   /**
    * RESET
