@@ -1,4 +1,948 @@
----
-layout: default
-title: Mehmet Koseoglu
----
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.jpg" class="avatar_img" alt="Mehmet Koseoglu" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Mehmet Koseoglu">Mehmet Koseoglu</h1>
+
+          <p class="title">Software Engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:mkoseoglu091@gmail.com" class="contact-link">mkoseoglu091@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+17789180803" class="contact-link">+1 (778) 918-0803</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1991-03-08">March 08, 1991</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Vancouver, BC, Canada</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://github.com/mkoseoglu091" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/mehmet-koseoglu-0ba80016a" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.youtube.com/channel/UCAsLlmkFhXlBdc7sELmwnKA" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I completed my bachelor's at the University of Melbourne, majoring in Computer Science. I am very interested in Game Development, Tools Development, Technical Art and Artificial Intelligence. As an older graduate, I have found my passion in Computer Science but I have varying levels of experience in different fields ranging from Graphic Design to Biology. I believe these experiences shaped how I look at problems and find appropriate and innovative solutions.
+          </p>
+
+          <p>
+            As a very curious person, I enjoy learning new things more than anything else. The programming languages that I am most familiar with are Python, C#, C++, Java, C and Javascript among others.
+            I am currently doing a post-bachelor diploma in Computer and Information Systems (Emerging Technologies) at Douglas College, Vancouver, Canada. I also try to find the time to make my own small games (Some of which can be found on this site!). I am also in the process of learning Maya and Houdini, along with other similar software, in order to find a job as a Technical Artist or a Pipeline TD.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Game Development</h4>
+
+                <p class="service-item-text">
+                  Developing games in Unreal Engine, Unity and Pico-8.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Technical Art</h4>
+
+                <p class="service-item-text">
+                  Making game asset creation tools using Houdini and Maya.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile and Web Development</h4>
+
+                <p class="service-item-text">
+                  Creating web applications and apps for iOS and Android.
+                </p>
+              </div>
+
+            </li>
+
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/drum.png" alt="drum icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Drums</h4>
+
+                <p class="service-item-text">
+                  I enjoy playing the drums, and teaching it to anyone interested.
+                </p>
+              </div>
+
+            </li>
+
+            
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="test1" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>test</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    test1
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="test1" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>test</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  test1
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Clients</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-1-color.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Douglas College, Canada</h4>
+
+              <span>2021-2023</span>
+
+              <p class="timeline-text">
+                Diploma in Computer and Information Systems - Emerging Technologies.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">University of Melbourne, Australia</h4>
+
+              <span>2017-2020</span>
+
+              <p class="timeline-text">
+                Bachelor of Science - Computing and Software Systems
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Lead Web Developer, NextGenPaws, Australia</h4>
+
+              <span>Dec 2020 - Aug 2021</span>
+
+              <p class="timeline-text">
+                &#8226; Led a team of 5 web developers for an Online E-commerce Business. <br>&#8226; Developed functionality for custom product creation tool. <br>&#8226; Improved traffic through Search Engine Optimisation.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Research Assistant, Monash University, Australia</h4>
+
+              <span>Dec 2019 - Mar 2020</span>
+
+              <p class="timeline-text">
+                &#8226; Worked in Prof. Tom Drummond's Computer Vision and Robotics Lab. <br>&#8226; Developed an event photographer robot and co-authored a research paper accepted for IEEE RSJ International Conferance on Intelligent Robots and Systems (IROS) 2020. <br><a href="https://arxiv.org/abs/1904.05688" style="color:white; text-decoration:underline">&#8226; Learning to Take Good Pictures of People with a Robot Photographer</a>
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Contract Software Engineer, SKY Artificial Intelligence Consulting, Australia</h4>
+
+              <span>Feb 2018 - Jun 2018</span>
+
+              <p class="timeline-text">
+                &#8226; Developed an unsupervised intersection handling algorithm analysis for Honda's Research and Development department.<br>&#8226; Implemented various Machine Learning algorithms such as ANNs, CNNs, RNNs, Deep Reinforcement Learning and more.<br>&#8226; Delivered a report on each approach used along with their viabilities for unsupervised intersections with varying lane numbers and road geometry.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Python</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">C#</h5>
+                <data value="85">85%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">C++</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Java</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Unreal Engine</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Unity Engine</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Houdini</h5>
+                <data value="55">55%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 55%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Maya</h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>technical art</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>unreal-unity</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>pico-8</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>technical art</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>unreal-unity</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>pico-8</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="pico-8">
+              <a href="go13.html" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Pico-1.png" alt="Go-13" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Go 13</h3>
+
+                <p class="project-category">pico-8</p>
+                <p class="project-category">I have been obsessed with GO recently, so I wanted to create my own 2 player Go game for Pico-8. Its not a full size 19x19 game. Instead its a quick 13x13. The project was on the simpler side, thanks to the Tromp-Taylor Rules I found online which describe the logical rules of GO.</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="unreal-unity">
+              <a href="https://youtu.be/OibkoqsNGRA" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Unreal-1.jpg" alt="Platform Puzzle" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Platform Puzzle</h3>
+
+                <p class="project-category">Unreal Engine</p>
+                <p class="project-category">A weekend project I made using Unreal Engine 5. For this game I only used Blueprint Visual Scripting to learn quick prototyping using Unreal. The game is a simple 3D platformer where you collect gems to complete levels, and there are only 4 levels.</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="pico-8">
+              <a href="LavaJump.html" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Pico-2.png" alt="Lava Jump" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Lava Jump</h3>
+
+                <p class="project-category">pico-8</p>
+                <p class="project-category">For this project I wanted to try a 3D game with Pico-8. Since Pico-8 doesn't have native 3D support, I followed a few tutorials  to implement a 3D world with ray casting. You jump using the O button ("Z" on desktop by default). I recommend enabling autorun from the menu if playing on mobile.</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="pico-8">
+              <a href="gin.html" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Pico-3.jpg" alt="Gin Rummy" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Gin Rummy</h3>
+
+                <p class="project-category">pico-8</p>
+                <p class="project-category">One of my favourite card games, Gin Rummy, developed on Pico-8. The hardest part of this project was writing the algorithm to find the ideal card arrangements and calculating deadwood cards. Use the "X" key to select a card, and the arrow  buttons to move the selected card. There is a how to play section under options ("P" on desktop).</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="pico-8">
+              <a href="halfpipe.html" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Pico-4.jpg" alt="Half Pipe" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Half Pipe</h3>
+
+                <p class="project-category">pico-8</p>
+                <p class="project-category">A reaction game I developed in the course of a weekend, in order to learn PICO-8. You simply have to press the correct button combinations. (X -> "X" key on desktop, O -> "Z" key on desktop)</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="unreal-unity">
+              <a href="https://youtu.be/XBnPUesIWIY" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Unity-1.jpg" alt="Boaty McBoatFace" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">The Adventure of Mr. Boaty McBoatFace</h3>
+
+                <p class="project-category">Unity</p>
+                <p class="project-category">A 3D Unity game a few friends and I made for our Graphics and Interaction course at the University of Melbourne. Our course was focused on writing shaders but we also tried to make a fun game out of it.</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="java">
+              <a href="https://youtu.be/MrOV4eDSRh0" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Java-1.jpg" alt="Peg Break" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Peg Break</h3>
+
+                <p class="project-category">Java</p>
+                <p class="project-category">The first game I made for a course I was taking in the University of Melbourne. Made using Java without the use of an engine. It is a simple game where you click on the screen to shoot a ball downwards to break as many pegs as possible.</p>
+
+              </a>
+            </li>
+
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">test</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">test blog</h3>
+
+                  <p class="blog-text">
+                    test
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://maps.google.com/maps?q=coal%20harbor&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
