@@ -1887,3 +1887,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 .avatar_img {
    border-radius: 50%;
 }
+
+.testimonials { display: none;}
+
+.clients { display: none;}
